@@ -72,7 +72,7 @@ fun AddStudents(navController: NavHostController) {
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
 
-                    Text(text = "SIGN UP FOR STUDENTS",fontFamily = FontFamily.Cursive, fontWeight = FontWeight.Bold)
+                    Text(text = "SIGN UP FOR STUDENTS",fontFamily = FontFamily.Cursive,  fontWeight = FontWeight.Bold, color = Color.Red)
 
                     var photoUri: Uri? by remember { mutableStateOf(null) }
 

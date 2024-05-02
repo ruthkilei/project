@@ -69,7 +69,7 @@ fun AboutScreen(navController: NavHostController) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = "Content of the page",
+                    text = "online learning",
                     fontSize = 30.sp,
                     color = Color.White
                 )
@@ -83,30 +83,22 @@ fun AboutScreen(navController: NavHostController) {
 
 @Composable
     fun BottomBar() {
-        val selectedIndex = remember { mutableStateOf(0) }
-        BottomNavigation(elevation = 10.dp) {
-            BottomNavigationItem(icon = {
-                Icon(imageVector = Icons.Default.Home,"")
-            },
-                label = { Text(text = "Home") }, selected = (selectedIndex.value == 0), onClick = {
-                    selectedIndex.value = 0
-                })
-            BottomNavigationItem(icon = {
-                Icon(imageVector = Icons.Default.Favorite,"")
-            },
-                label = { Text(text = "Favorite") }, selected = (selectedIndex.value == 1), onClick = {
-                    selectedIndex.value = 1
-                })
-            BottomNavigationItem(icon = {
-                Icon(imageVector = Icons.Default.Person, "")
-            },
-                label = { Text(text = "Profile") }, selected = (selectedIndex.value == 2), onClick = {
-                    selectedIndex.value = 2
-                })
-        }
-    }
+    val selectedIndex = remember { mutableStateOf(0) }
+    BottomNavigation(elevation = 10.dp) {
+        BottomNavigationItem(icon = {
+            Icon(imageVector = Icons.Default.Home, "")
+        },
+            label = { Text(text = "Home") }, selected = (selectedIndex.value == 0), onClick = {
+                selectedIndex.value = 0
+            })
+        BottomNavigationItem(icon = {
+            Icon(imageVector = Icons.Default.Favorite, "")
+        },
+            label = { Text(text = "Favorite") }, selected = (selectedIndex.value == 1), onClick = {
+                selectedIndex.value = 1
+            })
 
-
+}}
 @Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_NO)
 @Composable
 fun HomeScreenPreviewLight() {

@@ -262,7 +262,7 @@ fun HomeScreen(navController: NavHostController) {
                                          .width(150.dp)
 
                                  ) {
-                                     Text("", color = Color.Black)
+                                     Text("PROGRAMMING", color = Color.Black)
                                  }
 
                                  Spacer(modifier = Modifier.width(20.dp))
@@ -336,7 +336,7 @@ fun HomeScreen(navController: NavHostController) {
                                  modifier = Modifier
                                      .fillMaxSize()
                              ) {
-                                 Text(text = "Popular in everywere", textAlign = TextAlign.Justify)
+                                 Text(text = "Popular everywere", textAlign = TextAlign.Justify)
 
                                  Text(text = "View all", color = Color.Blue, textAlign = TextAlign.End)
                              }
@@ -580,7 +580,7 @@ fun HomeScreen(navController: NavHostController) {
                                                  modifier = Modifier
                                                      .padding(20.dp)
                                              ) {
-                                                 Text(text = "UI/UX")
+                                                 Text(text = "PROGRAMMING")
                                                  Text("RUTH KK")
                                              }
 
@@ -630,7 +630,8 @@ fun HomeScreen(navController: NavHostController) {
 
 
                              Column {
-                                 Text(text = "Testimonials")
+                                 Text(text = "" +
+                                         "")
                                  Text(text = "They are just some of those who have trusted our services. We hope your name will be avail here to.")
                              }
 
