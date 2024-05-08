@@ -118,22 +118,6 @@ fun HomeScreen(navController: NavHostController) {
                              .background(color = Color.Magenta),
                      ) {
 
-
-
-                         // background Images
-
-
-                         Image(painter = painterResource
-                             (id = R.drawable. ari),
-                             contentDescription = "online learning",
-                             modifier = Modifier
-                                 .fillMaxSize()
-//                .clip(CircleShape)
-                             ,
-                             contentScale = ContentScale.FillBounds
-                         )
-
-
                          //Profile pic, search Button
 
 
@@ -242,7 +226,7 @@ fun HomeScreen(navController: NavHostController) {
                                          .height(50.dp)
                                          .width(150.dp)
                                  ) {
-                                     Text("Web Developer", color = Color.Black)
+                                     Text("WEBSITE DEV", color = Color.Black)
                                  }
 
                                  Spacer(modifier = Modifier.width(20.dp))
@@ -300,7 +284,7 @@ fun HomeScreen(navController: NavHostController) {
                                          .height(50.dp)
                                          .width(150.dp)
                                  ) {
-                                     Text("UI/UX", color = Color.Black)
+                                     Text("DESIGN", color = Color.Black)
                                  }
 
                                  Spacer(modifier = Modifier.width(20.dp))
@@ -385,7 +369,7 @@ fun HomeScreen(navController: NavHostController) {
 
                                          }
                                          Text(
-                                             text = AnnotatedString("We are Currently seeking a talented and experienced Web Designer to jion online learnig that can help and aslo easen learning via diffirent location"),
+                                             text = AnnotatedString("The learning starts at 8am to 10am for the morning session"),
                                              Modifier.padding(5.dp)
                                          )
                                          Row(
@@ -447,12 +431,12 @@ fun HomeScreen(navController: NavHostController) {
                                                      .padding(20.dp)
                                              ) {
                                                  Text(text = "online learning")
-                                                 Text("ruth softwares")
+                                                 Text("kk softwares")
                                              }
 
                                          }
                                          Text(
-                                             text = AnnotatedString("We are Currently taking online learning through our platforms  "),
+                                             text = AnnotatedString("Some of the online classes that we take are .website dev,mobile app dev ,,,"),
                                              Modifier.padding(5.dp)
                                          )
                                          Row(
@@ -505,7 +489,7 @@ fun HomeScreen(navController: NavHostController) {
                                          ) {
                                              Image(
                                                  painter = painterResource(id = R.drawable.web),
-                                                 contentDescription = "APEN SOFTWARES",
+                                                 contentDescription = " KK SOFTWARES",
                                                  modifier = Modifier
                                                      .size(100.dp),
                                              )
@@ -513,7 +497,7 @@ fun HomeScreen(navController: NavHostController) {
                                                  modifier = Modifier
                                                      .padding(20.dp)
                                              ) {
-                                                 Text(text = "LEARNING Designer")
+                                                 Text(text = "LEARNING ")
                                                  Text("RUTH")
                                              }
 
@@ -572,7 +556,7 @@ fun HomeScreen(navController: NavHostController) {
                                          ) {
                                              Image(
                                                  painter = painterResource(id = R.drawable.web),
-                                                 contentDescription = "APEN SOFTWARES",
+                                                 contentDescription = "KK SOFTWARES",
                                                  modifier = Modifier
                                                      .size(100.dp),
                                              )
@@ -581,7 +565,7 @@ fun HomeScreen(navController: NavHostController) {
                                                      .padding(20.dp)
                                              ) {
                                                  Text(text = "PROGRAMMING")
-                                                 Text("RUTH KK")
+                                                 Text("RUTH ")
                                              }
 
                                          }
@@ -632,7 +616,7 @@ fun HomeScreen(navController: NavHostController) {
                              Column {
                                  Text(text = "" +
                                          "")
-                                 Text(text = "They are just some of those who have trusted our services. We hope your name will be avail here to.")
+                                 Text(text = "please join in for easy learning . to find our link follow as via whatsapp and also youtube.")
                              }
 
                              Row(
@@ -665,7 +649,7 @@ fun HomeScreen(navController: NavHostController) {
                                              Row {
                                                  Image(
                                                      painter = painterResource(id = R.drawable.web),
-                                                     contentDescription = "APEN SOFTWARE",
+                                                     contentDescription = "kk SOFTWARE",
                                                      modifier = Modifier
                                                          .size(100.dp),
                                                  )
@@ -674,7 +658,7 @@ fun HomeScreen(navController: NavHostController) {
                                                          .padding(20.dp)
                                                  ) {
                                                      Text(text = "RUTH")
-                                                     Text("Founder -apen Softwares")
+                                                     Text("Founder -laravel software ")
                                                      Spacer(modifier = Modifier.height(20.dp))
                                                      Text(
                                                          text = AnnotatedString("Great communication through out the project development."),
@@ -720,10 +704,10 @@ fun HomeScreen(navController: NavHostController) {
                                                          .padding(20.dp)
                                                  ) {
                                                      Text(text = "RUTH ")
-                                                     Text("Founder -apen  softwares")
+                                                     Text("Founder -laravel softwares")
                                                      Spacer(modifier = Modifier.height(20.dp))
                                                      Text(
-                                                         text = AnnotatedString("Great communication through out the project development."),
+                                                         text = AnnotatedString("for students who are interested can freely sign to our account."),
 
                                                          )
                                                  }
@@ -752,12 +736,6 @@ fun HomeScreen(navController: NavHostController) {
                                              .background(color = Color(0xffaee2e1)))
                                          {
 //                                             Image(
-//                                                 painter = painterResource(id = R.drawable.kaka),
-//                                                 contentDescription = "QAQA SOFTWARE",
-//                                                 modifier = Modifier
-//                                                     .size(100.dp),
-//                                                 Alignment.TopEnd
-//                                             )
                                              Row {
                                                  Image(
                                                      painter = painterResource(id = R.drawable.web),
@@ -770,10 +748,10 @@ fun HomeScreen(navController: NavHostController) {
                                                          .padding(20.dp)
                                                  ) {
                                                      Text(text = "RUTH")
-                                                     Text("Founder -apen Softwares")
+                                                     Text("Founder -kk Softwares")
                                                      Spacer(modifier = Modifier.height(20.dp))
                                                      Text(
-                                                         text = AnnotatedString("Great communication through out the project development."),
+                                                         text = AnnotatedString("we also offer exams for the online students."),
 
                                                          )
                                                  }
@@ -784,6 +762,7 @@ fun HomeScreen(navController: NavHostController) {
                                      }
                                  }
                              }
+                             
                          }
                      }
                  }
@@ -799,7 +778,9 @@ fun HomeScreen(navController: NavHostController) {
  @Composable
  fun BottomBar(navController: NavHostController) {
      val selectedIndex = remember { mutableStateOf(0) }
-     BottomNavigation(elevation = 10.dp) {
+     BottomNavigation(elevation = 10.dp,
+         modifier = Modifier.background(color = Color(0xff09c1fc))
+     ) {
          BottomNavigationItem(icon = {
              Icon(imageVector = Icons.Default.Home,"")
          },

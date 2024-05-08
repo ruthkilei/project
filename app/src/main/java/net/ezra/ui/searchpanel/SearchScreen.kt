@@ -29,6 +29,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import net.ezra.navigation.ROUTE_HOME
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
@@ -49,6 +50,8 @@ fun SearchScreen(navController: NavHostController) {
                 contentColor = Color.White,
                 elevation = 10.dp
             )
+
+
         },
 
 

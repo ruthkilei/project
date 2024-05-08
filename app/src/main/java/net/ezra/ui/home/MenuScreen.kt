@@ -57,7 +57,7 @@ fun MenuScreen(navController: NavHostController) {
                     }
                 },
                 backgroundColor = MaterialTheme.colorScheme.background,
-                contentColor = Color.White,
+                contentColor = Color.Blue,
                 elevation = 10.dp
             )
         },
@@ -67,15 +67,20 @@ fun MenuScreen(navController: NavHostController) {
             Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .background(Color(0xff8d6e63)),
+                    .background(
+                        Color(
+                            0xffeff0f6
+                    )
+                    ),
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
                     text = "Content of the page",
-                    fontSize = 30.sp,
-                    color = Color.White
+                    fontSize = 35.sp,
+                    color = Color.Blue
                 )
+
             }
 
         },
@@ -87,7 +92,10 @@ fun MenuScreen(navController: NavHostController) {
 @Composable
 fun MottomBar() {
     val selectedIndex = remember { mutableStateOf(0) }
-    BottomNavigation(elevation = 10.dp) {
+
+
+
+    BottomNavigation(elevation = 5.dp) {
         BottomNavigationItem(icon = {
             Icon(imageVector = Icons.Default.Home,"")
         },

@@ -56,17 +56,18 @@ fun AddStudents(navController: NavHostController) {
                     .fillMaxSize(),
             ) {
                 Image(
-                    painter = painterResource(id = R.drawable.gian),
+                    painter = painterResource(id = R.drawable.img_2),
                     contentDescription = "",
                     modifier = Modifier
                         .fillMaxSize(),
                     contentScale = ContentScale.Fit
+
                 )
                 Column(
 
                     modifier = Modifier
                         .fillMaxSize()
-//
+                        .background(color = Color.Cyan)
                         .padding(5.dp),
 
                     horizontalAlignment = Alignment.CenterHorizontally
