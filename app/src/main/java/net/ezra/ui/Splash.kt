@@ -83,27 +83,25 @@ fun SplashScreen(navController: NavHostController) {
         Column(
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally,
-            modifier = Modifier.fillMaxSize()
+            modifier = Modifier.fillMaxSize().padding(10.dp).size(100.dp)
         ) {
 
 
             Image(
                 painter = painterResource(id = R.drawable.img_5),
                 contentDescription = "Logo",
-                modifier = Modifier.fillMaxSize(),
+                modifier = Modifier.fillMaxSize() .size(5.dp).width(200.dp).height(20.dp),
                 contentScale = ContentScale.Crop,
 
             )
 
 Column {
 
-    
-
 
 }
     }
-}
-}
+}}
+
 
 @Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_NO)
 @Composable

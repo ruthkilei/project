@@ -8,6 +8,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.focusable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -30,6 +31,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
@@ -62,72 +64,54 @@ fun ContactScreen(navController: NavHostController) {
         topBar = {
             TopAppBar(
                 title = {
-                    Text(text = "Contact")
+                    Text(text = "Profile")
                 },
                 navigationIcon = {
                     IconButton(onClick = {}) {
                         Icon(Icons.Filled.ArrowBack, "backIcon")
+
                     }
                 },
                 contentColor = Color.White,
                 elevation = 10.dp
             )
         }, content = {
-            Column(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .background(Color(0xffeff5f6)),
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally
-                
-            ) {
-
-    Column(
-        modifier = Modifier
-
-            .size(width = 350.dp, height = 200.dp),
-        horizontalAlignment = Alignment.Start,
-        verticalArrangement = Arrangement.Top
-
-    ) {
-        Card(onClick = {
-            navController.navigate(ROUTE_ABOUT) {
-                popUpTo(ROUTE_HOME) { inclusive = true }
-            }
-        }) {
-            Row(
-
-            ) {
+            Box {
                 Image(
-                    painter = painterResource(id = R.drawable.img_2),
+                    painter = painterResource(id = R.drawable.img_3),
                     contentDescription = "CONTACT",
                     modifier = Modifier
-                        .size(100.dp),
+                        .fillMaxWidth()
+
+                        .size(width = 10.dp, height = 1000.dp)
+                       ,
+                    contentScale = ContentScale.Crop
+
                 )
+Spacer(modifier = Modifier)
                 Column(
                     modifier = Modifier
                         .padding(20.dp)
+                        .height(100.dp)
+
                 ) {
                     Text(text = "WEBDISGNER")
                     Text("contact as on whatsapp and gmail account")
-                    Text(text = "gmail;rruthsopyian@gmail.com")
+                    Text(text = "Gmail:rruthsopyian@gmail.com")
+                    Text(
+                        text = AnnotatedString("The learning starts at 8am to 10am for the morning session"),
+                        Modifier.padding(5.dp)
+
+                    )
+
+
                 }
-
             }
-            Text(
-                text = AnnotatedString("The learning starts at 8am to 10am for the morning session"),
-                Modifier.padding(5.dp)
-            )
 
 
         }
-    }
-
-
+    )
 }
-
-            })
-        }
 
 
 

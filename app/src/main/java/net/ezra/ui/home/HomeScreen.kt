@@ -116,6 +116,7 @@ fun HomeScreen(navController: NavHostController) {
                      Box(
                          modifier = Modifier
                              .background(color = Color.Magenta),
+
                      ) {
 
                          //Profile pic, search Button
@@ -354,7 +355,7 @@ fun HomeScreen(navController: NavHostController) {
 
                                          ) {
                                              Image(
-                                                 painter = painterResource(id = R.drawable.web),
+                                                 painter = painterResource(id = R.drawable.img_5),
                                                  contentDescription = "APEN SOFTWARE",
                                                  modifier = Modifier
                                                      .size(100.dp),
@@ -694,7 +695,7 @@ fun HomeScreen(navController: NavHostController) {
 //                                             )
                                              Row {
                                                  Image(
-                                                     painter = painterResource(id = R.drawable.web),
+                                                     painter = painterResource(id = R.drawable.img_5),
                                                      contentDescription = "APEN SOFTWARE",
                                                      modifier = Modifier
                                                          .size(100.dp),
