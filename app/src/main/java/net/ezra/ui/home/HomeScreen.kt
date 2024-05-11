@@ -133,7 +133,7 @@ fun HomeScreen(navController: NavHostController) {
                                      .background(color = Color.Transparent)
                              ) {
 
-                                 Text(text = "GET EASY LEARNING",
+                                 Text(text = "GET EASY ONLINE  LEARNING",
                                      style = TextStyle(
                                          color = Color.Black,
                                          fontSize = 35.sp,
@@ -247,7 +247,7 @@ fun HomeScreen(navController: NavHostController) {
                                          .width(150.dp)
 
                                  ) {
-                                     Text("PROGRAMMING", color = Color.Black)
+                                     Text("CYBER SECURITY", color = Color.Black)
                                  }
 
                                  Spacer(modifier = Modifier.width(20.dp))
@@ -267,7 +267,7 @@ fun HomeScreen(navController: NavHostController) {
                                          .width(150.dp)
                                  ) {
 
-                                     Text("CODDING DESIGN", color = Color.Black)
+                                     Text("DATA SCIENCE", color = Color.Black)
                                  }
 
                                  Spacer(modifier = Modifier.width(20.dp))
@@ -285,7 +285,7 @@ fun HomeScreen(navController: NavHostController) {
                                          .height(50.dp)
                                          .width(150.dp)
                                  ) {
-                                     Text("DESIGN", color = Color.Black)
+                                     Text("MACHINE LAERNING", color = Color.Black)
                                  }
 
                                  Spacer(modifier = Modifier.width(20.dp))
@@ -422,7 +422,7 @@ fun HomeScreen(navController: NavHostController) {
 
                                          ) {
                                              Image(
-                                                 painter = painterResource(id = R.drawable.web),
+                                                 painter = painterResource(id = R.drawable.img_5),
                                                  contentDescription = "LARAVEL SOFTWARES",
                                                  modifier = Modifier
                                                      .size(100.dp),
@@ -571,7 +571,7 @@ fun HomeScreen(navController: NavHostController) {
 
                                          }
                                          Text(
-                                             text = AnnotatedString("We are Currently seeking a talented and experienced Web Designer to jion our  learning platforms"),
+                                             text = AnnotatedString("We are Currently seeking a online learning beginners  to jion our  learning platforms"),
                                              Modifier.padding(5.dp)
                                          )
                                          Row(
@@ -617,7 +617,7 @@ fun HomeScreen(navController: NavHostController) {
                              Column {
                                  Text(text = "" +
                                          "")
-                                 Text(text = "please join in for easy learning . to find our link follow as via whatsapp and also youtube.")
+                                 Text(text = "please join in for easy learning . to find our link follow us via whatsapp and also youtube.")
                              }
 
                              Row(
