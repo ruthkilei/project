@@ -191,7 +191,10 @@ fun ContactScreen(navController: NavHostController) {
                     .width(300.dp)
 
                 ) {
-                    Text(text = "Log in", fontSize = 35.sp, fontFamily = FontFamily.Cursive,color = Color.Blue)
+                    Text(text = "Log in", fontSize = 35.sp, fontFamily = FontFamily.Cursive,color = Color.Blue, modifier = Modifier.clickable {  navController.navigate(
+                        ROUTE_HOME) {
+                        popUpTo(ROUTE_CONTACT) { inclusive = true }
+                    } })
                 }
 
 

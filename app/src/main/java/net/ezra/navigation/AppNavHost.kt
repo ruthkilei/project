@@ -10,6 +10,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import net.ezra.ui.SplashScreen
 import net.ezra.ui.about.AboutScreen
+//import net.ezra.ui.auth.AboutScreen
 import net.ezra.ui.auth.LoginScreen
 import net.ezra.ui.auth.SignupScreen
 import net.ezra.ui.contact.ContactScreen

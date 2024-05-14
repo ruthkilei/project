@@ -7,6 +7,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -81,6 +82,7 @@ import net.ezra.navigation.ROUTE_CONTACT
 import net.ezra.navigation.ROUTE_HOME
 import net.ezra.navigation.ROUTE_MENU
 import net.ezra.navigation.ROUTE_SEARCH
+import net.ezra.navigation.ROUTE_STUDENTLIST
 import net.ezra.ui.about.BottomBar
 
  @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -323,7 +325,10 @@ fun HomeScreen(navController: NavHostController) {
                              ) {
                                  Text(text = "Popular everywere", textAlign = TextAlign.Justify)
 
-                                 Text(text = "View all", color = Color.Blue, textAlign = TextAlign.End)
+                                 Text(text = "View all",modifier=Modifier.clickable {
+                                     navController.navigate(ROUTE_STUDENTLIST) {
+                                     popUpTo(ROUTE_HOME) { inclusive = true }
+                                 } }, color = Color.Blue, textAlign = TextAlign.End)
                              }
 
                              Spacer(modifier = Modifier.height(20.dp))
