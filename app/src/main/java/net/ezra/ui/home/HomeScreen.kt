@@ -375,7 +375,8 @@ fun HomeScreen(navController: NavHostController) {
 
                                          }
                                          Text(
-                                             text = AnnotatedString("The learning starts at 8am to 10am for the morning session"),
+                                             text = AnnotatedString("The learning starts at 8am to 10am for the morning session" +
+                                                     "and the afternon session starts at 1pm to 3pm ,,"),
                                              Modifier.padding(5.dp)
                                          )
                                          Row(
@@ -798,7 +799,7 @@ fun HomeScreen(navController: NavHostController) {
          BottomNavigationItem(icon = {
              Icon(imageVector = Icons.Default.Refresh,"")
          },
-             label = { Text(text = "online learning") }, selected = (selectedIndex.value == 1), onClick = {
+             label = { Text(text = "Add student") }, selected = (selectedIndex.value == 1), onClick = {
                  navController.navigate(ROUTE_ADD_STUDENTS) {
                  popUpTo(ROUTE_HOME) { inclusive = true }
              }

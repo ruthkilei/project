@@ -67,23 +67,29 @@ fun ProductsScreen(navController: NavHostController) {
     ){
         item {
             Column (Modifier.padding(horizontal = 20.dp, vertical = 20.dp)){
-                Text(text = "This is a an easy an reliable way of learning ..for those student who prefer study online",
+                Text(text = "This is a an easy and reliable way of learning ..for those student who prefer study online.please contact us on 0100353345.VIA email.rruthsopoyian@gmail.com" ,
 
                     fontSize = 22.sp,
                     fontFamily = FontFamily.Cursive,
-                    color = Color.Black)
+                    color = Color.Blue)
                 Spacer(modifier = Modifier.height(470.dp))
                 Row (Modifier.padding(horizontal = 20.dp)){
                     OutlinedButton(onClick = {
                         navController.navigate(ROUTE_PRODUCTS) {
                             popUpTo(ROUTE_PRODUCTS) { inclusive = true }
                         }
-                    }, modifier = Modifier
-                        .background(Color.Transparent)
-                        .width(300.dp)
 
-                    ) {
-                        Text(text = "Sign In", fontSize = 25.sp, fontFamily = FontFamily.Cursive,color= Color.White)
+
+                    }
+
+                        , modifier = Modifier
+                            .background(Color.Transparent)
+                            .width(300.dp)
+
+                    )
+
+                    {
+                        Text(text = "WELCOME", fontSize = 25.sp, fontFamily = FontFamily.Cursive,color= Color.Blue)
                     }
 //                    Spacer(modifier = Modifier.width(10.dp))
 //                    OutlinedButton(onClick = {
@@ -106,6 +112,9 @@ fun ProductsScreen(navController: NavHostController) {
 
 
                 }
+          Column {
+              Text(text = "WELCOME TO OUR ONLINE LEARNING ,,,,GET THE BEST LEARNING")
+          }
                 Spacer(modifier = Modifier.height(9.dp))
                 Column(Modifier.padding(horizontal = 90.dp)) {
                     Text(
@@ -128,7 +137,7 @@ fun ProductsScreen(navController: NavHostController) {
                                     popUpTo(ROUTE_ABOUT) { inclusive = true }
                                 }
                             },
-                        text = "Sign up", fontSize = 15.sp,color = Color.Cyan
+                        text = "WELCOME", fontSize = 15.sp,color = Color.Black
                     )
                 }
             }

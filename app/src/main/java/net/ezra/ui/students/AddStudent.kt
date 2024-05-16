@@ -217,7 +217,7 @@ fun AddStudents(navController: NavHostController) {
                     ) {
                         Icon(imageVector = Icons.Default.AccountCircle, contentDescription = "")
                         Spacer(modifier = Modifier.width(10.dp))
-                        Text(text = "Register")
+                        Text(text = "REGISTER")
                     }
 
 
